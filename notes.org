@@ -1,3 +1,4 @@
+
 * Konzept
   CLOCK: [2016-02-12 Fri 15:30]--[2016-02-12 Fri 18:33] =>  3:03
   CLOCK: [2016-02-09 Tue 20:35]--[2016-02-09 Tue 22:05] =>  1:30
@@ -24,7 +25,7 @@ Funktionen:
 
 TODOs:
 - Datenbankdesign
-  - Grundrisspläne
+  - Grundrisspläne -> OSM
   - LM Bilder (Position, Ausrichtung, Inhalt)
 - Businesslogik
   - Routenplanung
@@ -34,16 +35,26 @@ TODOs:
   - LM View
   - LM hinzufügen Maske
 
-* Indoor Mapping
+* Indoor Routing
 - Anyplace, failed -> Google Maps, not OSM
 
 
-* Open Questions
-** Android app or Web App?
-   - in wie weit sind die libraries (e.g. leaflet) mit android
-     kompatibel?
+* Open Questions and Discussables
+- Android app or Web App?
+  - in wie weit sind die libraries (e.g. leaflet) mit android kompatibel?
+  - ist eine android app sinnvoll? web app ist systemuebergreifend und
+    kann zusaetzlich auf mobile optimiert werden. (responsive design)
 
-** Proof of concept vs. working application
+- Proof of concept vs. working application
+  - lm oder nur indoor routing
+
+- stundenliste
+  - detailgrad
+
+- notes.org
+  - living document
+  - basis fuer schriftlichen teil
+    
 
 * Open Street Maps
 
