@@ -43,8 +43,14 @@ TODOs:
    - in wie weit sind die libraries (e.g. leaflet) mit android
      kompatibel?
 
-* Glossar
+** Proof of concept vs. working application
+
+* Open Street Maps
+
 [[file:img/OSM_Components.png]]
+
+
+* Glossar
 
 ** Osmosis
    Java CLI application to process osm data.
