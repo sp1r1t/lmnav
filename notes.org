@@ -1,5 +1,5 @@
 * Konzept
-  CLOCK: [2016-02-12 Fri 17:30]
+  CLOCK: [2016-02-12 Fri 15:30]
   CLOCK: [2016-02-09 Tue 20:35]--[2016-02-09 Tue 22:05] =>  1:30
   CLOCK: [2016-02-04 Thu 13:12]--[2016-02-04 Thu 18:12] =>  5:00
   CLOCK: [2016-02-03 Wed 20:41]--[2016-02-04 Thu 02:41] =>  4:00
@@ -44,6 +44,9 @@ TODOs:
      kompatibel?
 
 * Glossar
+[[http://wiki.openstreetmap.org/w/images/1/15/OSM_Components.png][osm overview]]
+[[file:img/OSM_Components.png]]
+
 ** Osmosis
    Java CLI application to process osm data.
 ** API
