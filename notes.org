@@ -44,7 +44,6 @@ TODOs:
      kompatibel?
 
 * Glossar
-[[http://wiki.openstreetmap.org/w/images/1/15/OSM_Components.png][osm overview]]
 [[file:img/OSM_Components.png]]
 
 ** Osmosis
