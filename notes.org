@@ -1,0 +1,101 @@
+* Konzept
+  CLOCK: [2016-02-12 Fri 17:30]
+  CLOCK: [2016-02-09 Tue 20:35]--[2016-02-09 Tue 22:05] =>  1:30
+  CLOCK: [2016-02-04 Thu 13:12]--[2016-02-04 Thu 18:12] =>  5:00
+  CLOCK: [2016-02-03 Wed 20:41]--[2016-02-04 Thu 02:41] =>  4:00
+
+- indoor landmark navigation
+- TU Gebäude als Test Umgebung
+- erweiterbares Framework
+  - Ortbestimmung durch WIFI Triangulation
+  - Hinzugefügte Landmark Bilder mittels Compass ausrichten
+- Android App
+- LMs durch user input
+- Navigation anhand von LMs
+- Kartographie über OSM
+
+Funktionen:
+- Map View. Digitaler Grundriss der TU (Hauptgebäude).
+  - LMs im Map View anzeigen (Thumbnails).
+- Routenplanung im Gebäude.
+- LM View. Route durch Serie von Bildern und Instruktionen anzeigen.
+- Hinzufügen von LMs mittels Smartphone Kamera und Platzierung auf der
+  Karte.
+
+TODOs:
+- Datenbankdesign
+  - Grundrisspläne
+  - LM Bilder (Position, Ausrichtung, Inhalt)
+- Businesslogik
+  - Routenplanung
+  - LMs speichern/ändern
+- GUI
+  - Map View
+  - LM View
+  - LM hinzufügen Maske
+
+* Indoor Mapping
+- Anyplace, failed -> Google Maps, not OSM
+
+
+* Open Questions
+** Android app or Web App?
+   - in wie weit sind die libraries (e.g. leaflet) mit android
+     kompatibel?
+
+* Glossar
+** Osmosis
+   Java CLI application to process osm data.
+** API
+   RESTfull API, returns XML (.osm)
+   base url: http://api.openstreetmap.org/
+   dev base url: http://api06.dev.openstreetmap.org/
+   
+   example call:
+   http://api.openstreetmap.org/api/0.6/map?bbox=left,bottom,right,top
+   as in:
+   http://www.openstreetmap.org/api/0.6/map?bbox=48.20742,16.42073,48.20713,16.42142
+   (to get Ernst-Happel Stadion)
+
+** Mapnik
+   OS C++ toolkit for rendering maps.
+
+** PostgreSQL
+   FOSS ORDBMS (object relational database management system)
+
+** PostGIS
+   postgres addon for geographic object support
+
+** osm2pgsql
+   cli programm to convert osm files to postGIS enabled postgres
+   database
+
+** planet.osm
+   weekly dump of osm data into *.osm files
+
+** XAPI
+   extended osm API, REST with X-path flavouring
+
+** XPath
+   Query language to navigate through the tree of an XML file
+
+** Overpass API
+   Extended XAPI API for read only access to OSM.
+   Faster then regular API, and supports far more compelx queries.
+
+** overpass turbo
+   web frontend for the overpass API for testing
+   http://overpass-turbo.eu/
+
+** Leaflet
+   OS slippy map javascript library
+
+** OpenLayers
+   OS javascript library to display map data in web browsers (same
+   purpose as leaflet)
+   
+** potlatch
+   flash web osm editor
+
+** josm
+   java desktop osm editor
