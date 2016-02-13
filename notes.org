@@ -2,6 +2,7 @@
   CLOCK: [2016-02-13 Sat 18:54]--[2016-02-13 Sat 23:17] =>  4:23
   - Recherche. 
   - Aufsetzen Graphhopper Server. 
+  - Anpassung des Graphhopper Server auf Fussgaenger Support.
   - Einbinde des TU Grundriss in JOSM.
   - Testen von Navigationsattributen.
   CLOCK: [2016-02-12 Fri 15:30]--[2016-02-12 Fri 18:33] =>  3:03
