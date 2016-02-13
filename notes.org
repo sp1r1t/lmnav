@@ -1,6 +1,5 @@
-
 * Konzept
-  CLOCK: [2016-02-13 Sat 18:54]
+  CLOCK: [2016-02-13 Sat 18:54]--[2016-02-13 Sat 23:17] =>  4:23
   CLOCK: [2016-02-12 Fri 15:30]--[2016-02-12 Fri 18:33] =>  3:03
   CLOCK: [2016-02-09 Tue 20:35]--[2016-02-09 Tue 22:05] =>  1:30
   CLOCK: [2016-02-04 Thu 13:12]--[2016-02-04 Thu 18:12] =>  5:00
@@ -53,6 +52,10 @@ TODOs:
 
 *** ?? select room as source/destination
 *** ?? supported tags. foot=yes necessary?
+    - foot=yes bezieht sich auf eine access restriction und sollte
+      daher nicht attribut fuer 'routebar' verwendet werden. besser
+      wäre es das attribut highway=corridor in graphhopper aufzunehmen
+      und fuer fussgaengerwege zu verwenden. <2016-02-13 Sat 23:20>
 
 * Open Questions and Discussables
 - Android app or Web App?
@@ -70,6 +73,7 @@ TODOs:
   - living document
   - basis fuer schriftlichen teil
     
+- öffentliche Zugänglichkeit
 
 * Open Street Maps
 
