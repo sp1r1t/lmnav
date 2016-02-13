@@ -1,5 +1,6 @@
 
 * Konzept
+  CLOCK: [2016-02-13 Sat 18:54]
   CLOCK: [2016-02-12 Fri 15:30]--[2016-02-12 Fri 18:33] =>  3:03
   CLOCK: [2016-02-09 Tue 20:35]--[2016-02-09 Tue 22:05] =>  1:30
   CLOCK: [2016-02-04 Thu 13:12]--[2016-02-04 Thu 18:12] =>  5:00
@@ -36,8 +37,22 @@ TODOs:
   - LM hinzufügen Maske
 
 * Indoor Routing
-- Anyplace, failed -> Google Maps, not OSM
+** Anyplace
+   failed -> Google Maps, not OSM
 
+** Graphhopper
+   highway=corridor wird unterstuetzt
+   [[file:img/graphhopper-current-indoor-support.png]]
+
+
+*** default OSM
+    [[file:img/graphhopper-default-osm.png]]
+
+*** edit: add tag foot=yes
+    [[file:img/graphhopper-edited-osm-foot-yes.png]]
+
+*** ?? select room as source/destination
+*** ?? supported tags. foot=yes necessary?
 
 * Open Questions and Discussables
 - Android app or Web App?
@@ -118,3 +133,6 @@ TODOs:
 
 ** josm
    java desktop osm editor
+
+** Graphhopper
+   open source routing library and server
