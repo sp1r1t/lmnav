@@ -136,7 +136,7 @@ TODOs:
   - Anpassung des Graphhopper Server auf Fussgaenger Support.
   - Einbinde des TU Grundriss in JOSM.
   - Testen von Navigationsattributen.
-  CLOCK: [2016-02-14 Sun 15:30]--[2016-02-14 Sun 18:33] =>  3:03
+  CLOCK: [2016-02-14 Sun 13:30]--[2016-02-14 Sun 16:33] =>  3:03
   CLOCK: [2016-02-09 Tue 20:35]--[2016-02-09 Tue 22:05] =>  1:30
   CLOCK: [2016-02-04 Thu 13:12]--[2016-02-04 Thu 18:12] =>  5:00
   CLOCK: [2016-02-03 Wed 20:41]--[2016-02-04 Thu 02:41] =>  4:00
