@@ -87,7 +87,17 @@ indoor=yes - indicates any osm object being inside a room, a building
       daher nicht attribut fuer 'routebar' verwendet werden. besser
       wäre es das attribut highway=corridor in graphhopper aufzunehmen
       und fuer fussgaengerwege zu verwenden. <2016-02-13 Sat 23:20>
-
+*** FlagEncoder
+    GH verwendet FlagEncoder (zB Foot, Car, Bike) um die OSM Tags
+    entsprechend zu interpretieren. 
+    Da für indoor Routen der Tag highway=corridor verwendet wird, habe
+    ich den FootFlagEncoder entsprechend erweitert. Damit wird indoor
+    routing grundsätzlich ausgeführt. 
+    Es gilt nun den Level Tag zu berücksichtigen um kein Routing
+    Mischmasch zwischen Stockwerken zu bekommen. Das sollte sich in
+    der Methode acceptWay() im FootFlagEncoder einstellen lassen.
+    <2016-02-19 Fri 21:42>
+    
 
 * Glossar
 ** Osmosis
