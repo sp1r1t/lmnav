@@ -10,12 +10,22 @@
 - Kartographie über OSM
 
 Funktionen:
+- Routenplanung im Gebäude.
+  - Startpunkt, Endpunkt (Geoposition oder Raum)
+  - Route
+- Indoor Visualisierung der Route
 - Map View. Digitaler Grundriss der TU (Hauptgebäude).
   - LMs im Map View anzeigen (Thumbnails).
-- Routenplanung im Gebäude.
 - LM View. Route durch Serie von Bildern und Instruktionen anzeigen.
 - Hinzufügen von LMs mittels Smartphone Kamera und Platzierung auf der
   Karte.
+
+Vorgehensweise
+1) Rerche
+2) Routenplanung
+3) Visualisierung Indoor
+4) LM Datenbank Design
+5) LMs von Route berechnen (Bilder + Text)
 
 TODOs:
 - Datenbankdesign
@@ -32,6 +42,33 @@ TODOs:
 * Open Street Maps
 
 [[file:img/OSM_Components.png]]
+
+
+* Indoor Tagging
+** Tags in use
+ - level=n - indicates floor level; interpretation of the values
+   varies (see key page) 
+
+   <n> is usually an integer number, sometimes also one or two
+   characters, sometimes combined (e.g. A,B,C,1,2,3).  in any case,
+   <n> should be ascending (towards the sky).  in some cultures base
+   level is indicated by level 0, in other cultures ground floor is
+   level 1 (or A).  there are also usages reported where fraction
+   numbers are used (e.g. level=2.5) indicating a "mezzanine" or
+   "intermediate level" (e.g. intermediate stairway platforms).  Room
+   number and name is entered in the ref=* and name=* tag.
+ - room=yes - see key wiki page for additional values to describe the
+   type more detailed
+ - entrance=yes - room or building entrance
+ - capacity=* - number of seats in a room
+ - highway=elevator - elevators
+ - highway=steps - stairways
+ - conveying=yes/forward/backward/reversible
+
+** proposed Tags
+highway=corridor - indoor ways
+indoor=yes - indicates any osm object being inside a room, a building
+(or both) or a shelter.
 
 * Indoor Routing
 ** Anyplace
@@ -50,6 +87,7 @@ TODOs:
       daher nicht attribut fuer 'routebar' verwendet werden. besser
       wäre es das attribut highway=corridor in graphhopper aufzunehmen
       und fuer fussgaengerwege zu verwenden. <2016-02-13 Sat 23:20>
+
 
 * Glossar
 ** Osmosis
@@ -128,8 +166,23 @@ TODOs:
   - basis fuer schriftlichen teil
     
 - öffentliche Zugänglichkeit
+  - ZKK
+
+- Datenschutz
+
+  - Recht Fotos von Innenräumen öffentlich machen
 
 * Stundenliste
+  CLOCK: [2016-02-19 Fri 16:26]--[2016-02-19 Fri 21:36] =>  5:10
+  - Recherche: Korrektes indoor tagging um zu Routen
+    - indoor: corridor
+  - Adaption von graphhopper auf Tag indoor: corridor
+    - Tag in FootFlagEncoder hinzugefügt
+    - viele Testfails
+    - viel Probieren
+    - hey, mvn package baut das jar nicht neu *duh*
+    - mvn install
+    - funktioniert      
   CLOCK: [2016-02-16 Tue 18:54]--[2016-02-16 Tue 23:17] =>  4:23
   - Recherche. 
   - Aufsetzen Graphhopper Server. 
