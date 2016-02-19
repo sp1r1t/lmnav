@@ -96,9 +96,9 @@ indoor=yes - indicates any osm object being inside a room, a building
     Da für indoor Routen der Tag highway=corridor verwendet wird, habe
     ich den FootFlagEncoder entsprechend erweitert. Damit wird indoor
     routing grundsätzlich ausgeführt. 
-    Es gilt nun den Level Tag zu berücksichtigen um kein Routing
-    Mischmasch zwischen Stockwerken zu bekommen. Das sollte sich in
-    der Methode acceptWay() im FootFlagEncoder einstellen lassen.
+    Es gilt nun eine geeignete Input Möglichkeit für Start und Ziel zu
+    schaffen, da sich mit Klicken auf die Map kein Stockwerk bestimmen
+    lässt und somit nicht klar ist wohin man eigentlich geroutet wird.
     <2016-02-19 Fri 21:42>
     
 
