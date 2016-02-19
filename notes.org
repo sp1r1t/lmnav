@@ -81,6 +81,9 @@ indoor=yes - indicates any osm object being inside a room, a building
 *** edit: add tag foot=yes
     [[file:img/graphhopper-edited-osm-foot-yes.png]]
 
+*** with activated corridor tag (Demo: Level Problem)
+[[file:img/gh-lvl0-route.png]]
+[[file:img/gh-lvl1-route.png]]
 *** ?? select room as source/destination
 *** ?? supported tags. foot=yes necessary?
     - foot=yes bezieht sich auf eine access restriction und sollte
