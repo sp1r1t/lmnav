@@ -104,7 +104,7 @@ indoor=yes - indicates any osm object being inside a room, a building
     
 
 *** Route
-
+```
 {
 "hints":{"visited_nodes.average":"386.0","visited_nodes.sum":"386"},
 
@@ -183,6 +183,7 @@ indoor=yes - indicates any osm object being inside a room, a building
     {"took":20,
 
      "copyrights":["GraphHopper","OpenStreetMap contributors"]}}
+```
 
 [[file:img/gh-example-route.png]]
 [[file:img/gh-example-route-points.png]]
