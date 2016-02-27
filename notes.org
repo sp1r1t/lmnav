@@ -100,7 +100,7 @@ indoor=yes - indicates any osm object being inside a room, a building
     have a real name, so thats ok). But lecture rooms and some special
     places, like the Studien und Pruefunsabteilung, should be named,
     so that the user can easily find them.
-*** ?? supported tags. foot=yes necessary?
+*** supported tags. foot=yes necessary?
     - foot=yes bezieht sich auf eine access restriction und sollte
       daher nicht attribut fuer 'routebar' verwendet werden. besser
       wäre es das attribut highway=corridor in graphhopper aufzunehmen
@@ -310,7 +310,7 @@ Koordinaten haben können ist das Stockwerkselektionsproblem gelöst.
   - Recht Fotos von Innenräumen öffentlich machen
 
 * Stundenliste
-  CLOCK: [2016-02-26 Fri 18:08]
+  CLOCK: [2016-02-26 Fri 18:08]--[2016-02-27 Sat 02:47] =>  8:39
   - get_room_list.sh
   - Aufsetzen Apache + PHP
   - Erstellen des ersten Prototypen fuer das Webinterface
