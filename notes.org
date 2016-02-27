@@ -87,7 +87,19 @@ indoor=yes - indicates any osm object being inside a room, a building
 *** with activated corridor tag (Demo: Level Problem)
 [[file:img/gh-lvl0-route.png]]
 [[file:img/gh-lvl1-route.png]]
-*** ?? select room as source/destination
+*** select room as source/destination
+    Rooms can be selected by either a dropdown list or through a
+    search bar. (dropdown will be just for reference, the TU main
+    building has more than 800 rooms, scrolling through them won't be
+    much of a breeze.)
+    This type of start/destination selection is necessary, clicking on
+    the map is a nice feature on first encounter, but one would need
+    to know where the room is in advance. this makes the navigation
+    process a little obsolete.
+    Most of the rooms are mapped without a name atm (and a lot don't
+    have a real name, so thats ok). But lecture rooms and some special
+    places, like the Studien und Pruefunsabteilung, should be named,
+    so that the user can easily find them.
 *** ?? supported tags. foot=yes necessary?
     - foot=yes bezieht sich auf eine access restriction und sollte
       daher nicht attribut fuer 'routebar' verwendet werden. besser
