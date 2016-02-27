@@ -1,4 +1,3 @@
-
 * Konzept
 - indoor landmark navigation
 - TU Gebäude als Test Umgebung
@@ -45,7 +44,6 @@ TODOs:
 * Open Street Maps
 
 [[file:img/OSM_Components.png]]
-
 
 * Indoor Tagging
 ** Tags in use
@@ -310,6 +308,10 @@ Koordinaten haben können ist das Stockwerkselektionsproblem gelöst.
   - Recht Fotos von Innenräumen öffentlich machen
 
 * Stundenliste
+  CLOCK: [2016-02-27 Sat 16:34]--[2016-02-27 Sat 18:37] =>  2:03
+  - Recherche mapnik
+  - Installation mapnik (+ python bindings)
+  - mapweaver
   CLOCK: [2016-02-26 Fri 18:08]--[2016-02-27 Sat 02:47] =>  8:39
   - get_room_list.sh
   - Aufsetzen Apache + PHP
