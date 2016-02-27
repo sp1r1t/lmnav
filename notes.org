@@ -40,6 +40,8 @@ TODOs:
   - LM View
   - LM hinzufügen Maske
 
+[[file:img/overview.png]]
+
 * Open Street Maps
 
 [[file:img/OSM_Components.png]]
@@ -297,6 +299,14 @@ Koordinaten haben können ist das Stockwerkselektionsproblem gelöst.
 
 * Stundenliste
   CLOCK: [2016-02-26 Fri 18:08]
+  - get_room_list.sh
+  - Aufsetzen Apache + PHP
+  - Erstellen des ersten Prototypen fuer das Webinterface
+  - index.html
+  - list_rooms.js
+  - events.js
+  - proxy.php
+  - Digramm erstellt
   CLOCK: [2016-02-25 Thu 20:16]--[2016-02-25 Thu 20:41] =>  0:25
   - Mit Skript zum ektrahiern von Räumen begonnen
   CLOCK: [2016-02-25 Thu 15:12]--[2016-02-25 Thu 19:42] =>  4:30
