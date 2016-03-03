@@ -231,7 +231,10 @@ Koordinaten haben können ist das Stockwerkselektionsproblem gelöst.
    um Start und Zielraum auszuwählen. Die Route wird mittels
    Graphhopper berechnet, zur graphischen Darstellung werden sie an
    mapweaver weitergeleitet, welcher das Bild berechnet.
+
+   Hier zwei Beispiele:
    [[file:img/lmnav-demo1.png]]
+
    [[file:img/lmnav-demo2.png]]
 * Glossar
 ** Osmosis
