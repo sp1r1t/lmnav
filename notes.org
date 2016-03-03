@@ -320,7 +320,10 @@ Koordinaten haben können ist das Stockwerkselektionsproblem gelöst.
   - Recht Fotos von Innenräumen öffentlich machen
 
 * Stundenliste
-  CLOCK: [2016-03-03 Thu 14:05]
+  CLOCK: [2016-03-03 Thu 14:05]--[2016-03-03 Thu 17:50] =>  3:45
+  - Einbinden mapweaver in webapp
+  - automatische route image creation
+  - diagramm update
   CLOCK: [2016-03-02 Wed 15:31]--[2016-03-02 Wed 19:12] =>  3:41
   - mapweaver Recherche
   - mapweaver and perl 5.22 anpassen
