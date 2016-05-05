@@ -296,30 +296,65 @@ Koordinaten haben können ist das Stockwerkselektionsproblem gelöst.
 ** Graphhopper
    open source routing library and server
 
+* How Tos
+** Change osm map
+1) use josm tu change it
+2) save into graphhopper/tu.osm
+3) make the new map available to overpass
+   overpass/repopulate_db.sh
+4) remake rooms.list
+   lmnav/scripts/get_room_list.sh
+5) copy room list to /srv/http/lmnav/rooms.json
+
+** change picture-directions.osm
+1) change in josm
+2) cp picture-db/picture-directions.osm /srv/http/lmnav/
+
+* TODOs
+** Blickachse
+[betrifft verbesserung des image selection algorithmus]
+wenn ein Foto in Blickrichtung gemacht wurde (zB einen Gang entlang)
+kann ein größerer Radius angenommen werden als 5 Meter.
+Wie berechnet man, ob ein Punkt auf der Blickachse liegt?
+
 * Open Questions and Discussables
-- Android app or Web App?
-  - in wie weit sind die libraries (e.g. leaflet) mit android kompatibel?
-  - ist eine android app sinnvoll? web app ist systemuebergreifend und
-    kann zusaetzlich auf mobile optimiert werden. (responsive design)
-
-- Proof of concept vs. working application
-  - lm oder nur indoor routing
-
-- stundenliste
-  - detailgrad
-
-- notes.org
-  - living document
-  - basis fuer schriftlichen teil
-    
 - öffentliche Zugänglichkeit
   - ZKK
 
 - Datenschutz
-
   - Recht Fotos von Innenräumen öffentlich machen
 
 * Stundenliste
+  CLOCK: [2016-05-04 Wed 17:31]
+  - rewrite image selection algorithm
+  - fix tu.osm bug where levels overlap (there are probably a lot
+    more, but now for testing)
+  - the original mapper didn't get the niveau jumps. actually the
+    whole map needs to be fixed
+  - map more images
+  - create script webify_images.sh 
+  - create 404 image
+  - create script populate_server.sh
+  CLOCK: [2016-04-30 Sat 12:15]--[2016-04-30 Sat 14:33] =>  2:18
+  - route-gen.py, route-getn-proxy.php, events.js
+  - include images
+  CLOCK: [2016-04-29 Fri 11:58]--[2016-04-29 Fri 14:24] =>  2:26
+  - route-gen.py: find pics in radius of segment (step) start point
+  CLOCK: [2016-04-28 Thu 22:46]--[2016-04-28 Thu 23:29] =>  0:43
+  - include new calculations into route-gen.py
+  CLOCK: [2016-03-29 Tue 22:50]--[2016-03-29 Tue 23:17] =>  0:27
+  - rewrite distance and angle script
+  CLOCK: [2016-03-29 Tue 13:24]--[2016-03-29 Tue 16:05] =>  2:41
+  - recherche sphärischen geometrie
+  - scripten: berechnung distance und winkel
+  CLOCK: [2016-03-27 Sun 12:43]--[2016-03-27 Sun 16:46] =>  4:03
+  - start python script route-gen.py
+  - parse josm file to create image db
+  - image db: coordinates where it's taken, viewing angle, image name
+  CLOCK: [2016-03-26 Sat 15:33]--[2016-03-26 Sat 21:04] =>  5:31
+  - Bilder aufnehmen
+  - Ueberlegung wie man die Bilder am besten markiert.
+  - mark images using josm
   CLOCK: [2016-03-03 Thu 14:05]--[2016-03-03 Thu 17:50] =>  3:45
   - Einbinden mapweaver in webapp
   - automatische route image creation
