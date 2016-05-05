@@ -244,6 +244,10 @@ Koordinaten haben können ist das Stockwerkselektionsproblem gelöst.
    [[file:img/demo.png]]
 
 
+   <2016-05-05 Thu>
+   Neues Beispiel mit Routing Instruction Augmentation
+   [[file:img/demo_with_arrows.png]]
+
 * Glossar
 ** Osmosis
    Java CLI application to process osm data.
@@ -325,6 +329,12 @@ wenn ein Foto in Blickrichtung gemacht wurde (zB einen Gang entlang)
 kann ein größerer Radius angenommen werden als 5 Meter.
 Wie berechnet man, ob ein Punkt auf der Blickachse liegt?
 
+** Niveau Sprünge im OSM berücksichtigen
+** Stockwerkinformation berücksichtigen
+** Auswahl von Eingängen verfeinern (Bsp: Nelsons, kleiner Teil Prechtlsaal)
+** restricted areas
+** Stiegen explizit erwähnen
+
 * Open Questions and Discussables
 - öffentliche Zugänglichkeit
   - ZKK
@@ -333,6 +343,13 @@ Wie berechnet man, ob ein Punkt auf der Blickachse liegt?
   - Recht Fotos von Innenräumen öffentlich machen
 
 * Stundenliste
+  CLOCK: [2016-05-05 Thu 16:12]--[2016-05-05 Thu 19:45] =>  3:33
+  - routing instructions
+  - route angle calculation
+  - arrows
+  - route instruction overlay in images
+  - mail update
+  - update notes
   CLOCK: [2016-05-04 Wed 17:31]--[2016-05-05 Thu 03:33] => 10:02
   - rewrite image selection algorithm
   - fix tu.osm bug where levels overlap (there are probably a lot
