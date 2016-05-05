@@ -236,6 +236,14 @@ Koordinaten haben können ist das Stockwerkselektionsproblem gelöst.
    [[file:img/lmnav-demo1.png]]
 
    [[file:img/lmnav-demo2.png]]
+
+
+   <2016-05-05 Thu>
+   Neues Beispiel mit Alpha Version des Image Selectors
+
+   [[file:img/demo.png]]
+
+
 * Glossar
 ** Osmosis
    Java CLI application to process osm data.
@@ -325,7 +333,7 @@ Wie berechnet man, ob ein Punkt auf der Blickachse liegt?
   - Recht Fotos von Innenräumen öffentlich machen
 
 * Stundenliste
-  CLOCK: [2016-05-04 Wed 17:31]
+  CLOCK: [2016-05-04 Wed 17:31]--[2016-05-05 Thu 03:33] => 10:02
   - rewrite image selection algorithm
   - fix tu.osm bug where levels overlap (there are probably a lot
     more, but now for testing)
@@ -335,6 +343,7 @@ Wie berechnet man, ob ein Punkt auf der Blickachse liegt?
   - create script webify_images.sh 
   - create 404 image
   - create script populate_server.sh
+  - update notes
   CLOCK: [2016-04-30 Sat 12:15]--[2016-04-30 Sat 14:33] =>  2:18
   - route-gen.py, route-getn-proxy.php, events.js
   - include images
