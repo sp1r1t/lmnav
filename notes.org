@@ -335,6 +335,8 @@ Wie berechnet man, ob ein Punkt auf der Blickachse liegt?
 ** restricted areas
 ** Stiegen explizit erwähnen
 
+** Bilder auf Knotenpunkten aufnehmen (bsp Weg zum Aufbaulabor)
+** Framework zum Ausrichten von Bildern (auf OSM Wege ausgelegt)
 * Open Questions and Discussables
 - öffentliche Zugänglichkeit
   - ZKK
@@ -343,6 +345,11 @@ Wie berechnet man, ob ein Punkt auf der Blickachse liegt?
   - Recht Fotos von Innenräumen öffentlich machen
 
 * Stundenliste
+  CLOCK: [2016-05-11 Wed 20:49]--[2016-05-11 Wed 23:02] =>  2:13
+  - color style for josm picture directions
+  - map more pictures
+  - new notes
+  - adapt overview.dia
   CLOCK: [2016-05-05 Thu 16:12]--[2016-05-05 Thu 19:45] =>  3:33
   - routing instructions
   - route angle calculation
